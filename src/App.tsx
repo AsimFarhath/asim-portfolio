@@ -83,7 +83,7 @@ export default function App() {
               {/* Profile Picture */}
               <div className="flex justify-center">
                 <img 
-                  src="/profile.jpg" 
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Asim Farhath Profile" 
                   className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover object-top border-4 border-slate-200 shadow-md"
                 />
