@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom Animation Utility Classes */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* No Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* ==========================================================================
+   PRINT DIRECTIVES (HIGH QUALITY RESUME EXPORT)
+   This forces the browser to hide everything else on the page during Ctrl+P or
+   Cmd+P print triggers, formatting the ResumeViewer modal as a standard paper doc.
+   ========================================================================== */
+@media print {
+  /* Hide typical website parts */
+  body, html, #root {
+    background: white !important;
+    color: black !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide navbar, footer, background grates, hero elements, other panels */
+  #main-nav, 
+  #hero, 
+  #about, 
+  #skills, 
+  #experience, 
+  #projects, 
+  #contact, 
+  footer, 
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Make sure the main printable resume view is fully displayed and expanded */
+  div.fixed {
+    position: absolute !important;
+    inset: 0 !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    display: block !important;
+    z-index: 99999 !important;
+  }
+
+  .print\:absolute {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+    color: black !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Ensure resume headers render crisp dark */
+  h1, h2, h3, h4, span, p, li, a {
+    color: black !important;
+    text-shadow: none !important;
+  }
+
+  .printable-area {
+    margin: 0 auto !important;
+    padding: 2.5cm 2cm 2cm 2cm !important; /* Proper margin bounds for A4/Letter size */
+    width: 210mm !important; /* standard A4 width */
+    max-width: 100% !important;
+    background: white !important;
+  }
+
+  /* Force page breaks to be clean */
+  .space-y-8 > div {
+    page-break-inside: avoid;
+  }
+}
