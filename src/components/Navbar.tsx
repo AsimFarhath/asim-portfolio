@@ -100,7 +100,7 @@ export function Navbar({ activeSection, setActiveSection }: NavbarProps) {
 
             {/* Download Resume */}
             <a
-              href="/Asim_Farhath_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Asim_Farhath_Resume.pdf`}
               target="_blank"
   rel="noopener noreferrer"
               className="text-slate-700 hover:text-slate-900 flex items-center gap-2 text-xs font-bold uppercase tracking-wider py-2 px-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition-all duration-300 shadow-sm"
@@ -113,7 +113,7 @@ export function Navbar({ activeSection, setActiveSection }: NavbarProps) {
           {/* Mobile Controls */}
           <div className="md:hidden flex items-center gap-3">
             <a
-              href="/Asim_Farhath_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Asim_Farhath_Resume.pdf`}
               download
               className="text-slate-600 hover:text-slate-900 p-2.5 rounded-xl border border-slate-200 bg-white shadow-sm"
             >
@@ -153,7 +153,7 @@ export function Navbar({ activeSection, setActiveSection }: NavbarProps) {
 
           <div className="pt-4 border-t border-slate-100">
             <a
-              href="/Asim_Farhath_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Asim_Farhath_Resume.pdf`}
               download
               className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs uppercase tracking-wider font-bold shadow-sm"
             >

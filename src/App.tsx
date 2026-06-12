@@ -110,7 +110,7 @@ export default function App() {
               {/* Elegant Action Trigger Buttons */}
               <div className="flex justify-center pt-2">
                 <a
-  href="/Asim_Farhath_Resume.pdf"
+  href={`${import.meta.env.BASE_URL}Asim_Farhath_Resume.pdf`}
   target="_blank"
   rel="noopener noreferrer"
   className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-widest py-4 px-8 rounded-lg flex items-center justify-center gap-2.5 transition-all duration-200 cursor-pointer"
@@ -210,7 +210,7 @@ export default function App() {
           {/* Core resume widget button for fast access */}
           <div className="flex items-center gap-3 shrink-0">
   <a
-  href="/Asim_Farhath_Resume.pdf"
+  href={`${import.meta.env.BASE_URL}Asim_Farhath_Resume.pdf`}
   target="_blank"
   rel="noopener noreferrer"
   className="bg-slate-950 hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wide py-2.5 px-4 rounded-xl flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
