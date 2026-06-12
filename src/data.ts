@@ -34,7 +34,7 @@ export const internshipsList: Internship[] = [
     location: "Kumbakonam, Tamil Nadu",
     period: "June 2023 – July 2023",
     type: "Web Development",
-    certificateUrl: "/Certificates/Vebbox intern.pdf",
+    certificateUrl: `${import.meta.env.BASE_URL}Certificates/Vebbox intern.pdf`,
     description: [
       "Assisted in crafting responsive layouts and cross-browser compatible interfaces.",
       "Developed interactive UI elements using JavaScript and modern CSS practices.",
@@ -50,7 +50,7 @@ export const internshipsList: Internship[] = [
     location: "Thanjavur, Tamil Nadu",
     period: "June 2024 – July 2024",
     type: "Data Science",
-    certificateUrl: "/Certificates/Scion Intern.pdf",
+   certificateUrl: `${import.meta.env.BASE_URL}Certificates/Scion Intern.pdf`,
     description: [
       "Conducted exploratory data analysis (EDA) on datasets, producing detailed visualizations and statistical insights.",
       "Assisted in developing and evaluating predictive models and data-prep pipelines using Python and SQL.",
@@ -65,7 +65,7 @@ export const internshipsList: Internship[] = [
     location: "Trichy, Tamil Nadu",
     period: "July 2025 – July 2025",
     type: "Data Analytics",
-    certificateUrl: "/Certificates/Fantasy Intern.pdf",
+    certificateUrl: `${import.meta.env.BASE_URL}Certificates/Fantasy Intern.pdf`,
     description: [
       "Designed clean analytics dashboards to monitor and track business performance indicators (KPIs).",
       "Queried databases to extract data trends, ensuring high hygiene and schema consistency.",
