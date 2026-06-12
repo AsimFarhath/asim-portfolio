@@ -146,7 +146,7 @@ export function About() {
   </div>
 
   <a
-    href="${import.meta.env.BASE_URL}Certificates/Coderead.pdf"
+    href={`${import.meta.env.BASE_URL}Certificates/Coderead.pdf`}
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center gap-1 text-xs font-semibold text-teal-700 hover:text-teal-900 transition-colors"
