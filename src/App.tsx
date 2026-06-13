@@ -153,7 +153,7 @@ export default function App() {
   <Linkedin className="w-4.5 h-4.5" />
 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/AsimFarhath" 
                   target="_blank" 
                   className="p-3 bg-white hover:bg-slate-50 rounded-xl border border-slate-200 text-slate-500 hover:text-slate-900 transition-all cursor-pointer shadow-sm"
                   title="Check GitHub"
