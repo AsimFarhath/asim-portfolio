@@ -12,7 +12,7 @@ export const personalInfo = {
   phone: "+91 8248461679",
   email: "asimfarhath9@gmail.com",
   location: "Thanjavur, Tamil Nadu, India",
-  summary: "Aspiring Web Developer with strong knowledge of Java programming, OOP concepts, and problem-solving techniques. Skilled in logical program design, debugging, and developing efficient solutions using Java. Completed a Software Developer course at Coderead Academy with hands-on experience in full-stack development using React.js, Node.js, and MS SQL. Developed a Turf Online Booking Platform and currently working on an AI-powered financial literacy system as a final-year Computer Science and Engineering university project.",
+  summary: "Aspiring Web Developer with strong knowledge of Java programming, OOP concepts, and problem-solving techniques. Skilled in logical program design, debugging, and developing efficient solutions using Java. Completed a Full Stack Development course at Coderead Academy with hands-on experience in web development using React.js, Node.js, and MS SQL. Developed a Turf Online Booking Platform, completed an AI-powered financial literacy system as a final-year university project, and freelanced a portfolio website for an individual client.",
   github: "https://github.com", // Placeholder, will show clean link
   linkedin: "https://linkedin.com", // Placeholder
 };
@@ -91,7 +91,10 @@ export const projectsList: Project[] = [
       "Full-stack custom calendar slot grid for real-time turf booking.",
       "Secure role-based dashboard for managers (Manage turf hours, active pricing bands, and slots).",
       "Automated confirmation flows and booking ledger tracking."
-    ]
+    ],
+    githubUrl: "https://github.com/AsimFarhath",
+
+    demoUrl: "https://www.playspots.in/"
   },
   {
     id: "proj-2",
@@ -108,9 +111,49 @@ export const projectsList: Project[] = [
       "Interactive time-series charting showing predictive stock trends.",
       "Multilingual financial assistant support (Tamil and English) using LLM chatbot integration.",
       "Investment scoring system helping users identify low, moderate, or high-risk assets."
-    ]
-  }
+    ],
+    githubUrl: "https://github.com/AsimFarhath",
+
+    demoUrl: "https://fintechiq.me/"
+  },
+  {
+  id: "proj-3",
+
+  title: "Personal Portfolio Website",
+
+  period: "June 2026",
+
+  organization: "Freelance",
+
+  location: "Remote",
+
+  description: [
+    "Designed and developed a responsive portfolio website for an individual client using modern frontend technologies.",
+    "Implemented smooth animations, project showcases, certificates section, and deployment workflows."
+  ],
+
+  techStack: [
+    "React.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Vercel",
+    "GitHub"
+  ],
+
+  highlights: [
+    "Responsive design optimized for desktop and mobile devices.",
+    "Interactive animations using Framer Motion.",
+    "Integrated certificates, resume download, and project showcase sections.",
+    "Deployed and maintained using GitHub and Vercel."
+  ],
+
+  githubUrl: "https://github.com/AsimFarhath/",
+
+  demoUrl: "https://devnath.vercel.app"
+}
 ];
+
 
 export const certificationsList: Certification[] = [
   {
@@ -141,4 +184,5 @@ export const skillsList: SkillGroup[] = [
     category: "Tools & Workflow",
     skills: ["Git & GitHub", "Visual Studio Code", "NPM", "Figma", "Docker Basics"]
   }
+  
 ];

@@ -173,7 +173,7 @@ export function Projects() {
                     </a>
                     
                     <a
-                      href="#contact"
+                      href={project.demoUrl}
                       className="text-white bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 font-bold tracking-wide transition-all shadow-sm cursor-pointer hover:shadow-md"
                     >
                       <Rocket className="w-3.5 h-3.5" />
