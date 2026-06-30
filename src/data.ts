@@ -92,7 +92,7 @@ export const projectsList: Project[] = [
       "Secure role-based dashboard for managers (Manage turf hours, active pricing bands, and slots).",
       "Automated confirmation flows and booking ledger tracking."
     ],
-    githubUrl: "https://github.com/AsimFarhath",
+    githubUrl: "https://github.com/AsimFarhath/turf-booking-platform",
 
     demoUrl: "https://www.playspots.in/"
   },
@@ -112,7 +112,7 @@ export const projectsList: Project[] = [
       "Multilingual financial assistant support (Tamil and English) using LLM chatbot integration.",
       "Investment scoring system helping users identify low, moderate, or high-risk assets."
     ],
-    githubUrl: "https://github.com/AsimFarhath",
+    githubUrl: "https://github.com/AsimFarhath/fintech-iq-platform",
 
     demoUrl: "https://fintechiq.me/"
   },
@@ -148,7 +148,7 @@ export const projectsList: Project[] = [
     "Deployed and maintained using GitHub and Vercel."
   ],
 
-  githubUrl: "https://github.com/AsimFarhath/",
+  githubUrl: "https://github.com/AsimFarhath/devnath-portfolio",
 
   demoUrl: "https://devnath.vercel.app"
 }
